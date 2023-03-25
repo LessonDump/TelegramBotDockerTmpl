@@ -17,7 +17,7 @@ CMD ["python", "-m", "app"]
 # $ docker build -t telegram_bot_docker_tmpl .
 # -------------------------------
 # Create and run a new container from an image:
-# $ docker run -d --name TelegramBotDockerTmpl --env "BOT_TOKEN=<BOT_TOKEN>" telegram_bot_docker_tmpl
+# $ docker run -d --name TelegramBotDockerTmpl --env "TMPL_BOT_TOKEN=<TMPL_BOT_TOKEN>" telegram_bot_docker_tmpl
 # -------------------------------
 # Stop running container:
 # $ docker stop TelegramBotDockerTmpl
@@ -33,5 +33,3 @@ CMD ["python", "-m", "app"]
 # -------------------------------
 # Execute a command in a running container:
 # $ docker exec -it TelegramBotDockerTmpl bash
-
-
