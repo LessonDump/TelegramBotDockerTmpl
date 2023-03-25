@@ -1,0 +1,42 @@
+version: '3.9'
+
+services:
+
+    telegram_bot_docker_tmpl:
+        container_name: TelegramBotDockerTmpl
+        image: telegram_bot_docker_tmpl
+
+        build: .
+
+        environment:
+            - TMPL_BOT_TOKEN=${TMPL_BOT_TOKEN}
+
+        ports:
+            - "443:443"
+
+        volumes:
+          - ./logs:/~/TelegramBotDockerTmpl/logs
+
+volumes:
+  logs:
+
+
+# -------------------------------
+# Create and start container:
+# $ export TMPL_BOT_TOKEN=<TMPL_BOT_TOKEN>
+# $ docker-compose up -d
+# -------------------------------
+# Stop lifted containers:
+# $ docker-compose stop
+# -------------------------------
+# Start stopped containers
+# $ docker-compose start
+# -------------------------------
+# Stop and delete containers and network:
+# $ docker-compose down
+# -------------------------------
+# Remove image:
+# $ docker rmi telegram_bot_docker_tmpl
+# -------------------------------
+# Clear logs:
+# $ rm -rf logs/*
