@@ -17,6 +17,8 @@ services:
         volumes:
           - ./logs:/~/TelegramBotDockerTmpl/logs
 
+        restart: on-failure
+
 volumes:
   logs:
 
@@ -39,4 +41,4 @@ volumes:
 # $ docker rmi telegram_bot_docker_tmpl
 # -------------------------------
 # Clear logs:
-# $ rm -rf logs/*
+# $ sudo rm -rf logs/*
