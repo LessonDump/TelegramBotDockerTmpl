@@ -9,7 +9,7 @@ services:
         build: .
 
         environment:
-            - TMPL_BOT_TOKEN=${TMPL_BOT_TOKEN}
+            - BOT_TOKEN=${BOT_TOKEN}
 
         ports:
             - "443:443"
@@ -23,7 +23,7 @@ volumes:
 
 # -------------------------------
 # Create and start container:
-# $ export TMPL_BOT_TOKEN=<TMPL_BOT_TOKEN>
+# $ export BOT_TOKEN=<BOT_TOKEN>
 # $ docker-compose up -d
 # -------------------------------
 # Stop lifted containers:

@@ -5,4 +5,4 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOKEN = os.getenv('TMPL_BOT_TOKEN')
+TOKEN = os.getenv('BOT_TOKEN')
