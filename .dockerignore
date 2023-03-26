@@ -14,7 +14,7 @@ app/__pycache__/
 env/
 
 # Virtual environment
-app/.env
+.env
 
 # PyCharm
 .idea
